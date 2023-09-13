@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
 
+    public GameObject escadaEnemyCima; // Referência ao objeto "Escada Enemy Cima"
+    public GameObject escadaEnemyBaixo; // Referência ao objeto "Escada Enemy Baixo"
+
     //Variaveis Escada
     public float climbSpeed = 3f; // Velocidade de subida na escada
     [SerializeField] private bool isClimbing; // Indica se o jogador está subindo na escada
@@ -46,11 +49,23 @@ public class PlayerController : MonoBehaviour
             if (verticalInput > 0)
             {
                 rb.velocity = new Vector2(rb.velocity.x, climbSpeed);
+
+                // Ative o objeto "Escada Enemy Cima"
+                escadaEnemyCima.SetActive(true);
+
+                // Ative o objeto "Escada Enemy Baixo"
+                escadaEnemyBaixo.SetActive(false);
             }
             // Se estiver pressionando para baixo, desça a escada
             else if (verticalInput < 0)
             {
                 rb.velocity = new Vector2(rb.velocity.x, -climbSpeed);
+
+                // Desative o objeto "Escada Enemy Cima"
+                escadaEnemyCima.SetActive(false);
+
+                // Ative o objeto "Escada Enemy Baixo"
+                escadaEnemyBaixo.SetActive(true);
             }
             // Se não estiver pressionando verticalmente, mantenha a velocidade vertical zero
             else
