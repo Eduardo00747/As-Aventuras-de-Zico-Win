@@ -5204,6 +5204,7 @@ GameObject:
   - component: {fileID: 339362988}
   - component: {fileID: 339362987}
   - component: {fileID: 339362986}
+  - component: {fileID: 339362989}
   m_Layer: 5
   m_Name: Button Esquerda
   m_TagString: Untagged
@@ -5313,6 +5314,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339362984}
   m_CullTransparentMesh: 1
+--- !u!114 &339362989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339362984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2087023733}
+          m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
+          m_MethodName: TouchHorizontal
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: -1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2087023733}
+          m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
+          m_MethodName: TouchHorizontal
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &362160222
 GameObject:
   m_ObjectHideFlags: 0
@@ -5581,6 +5627,7 @@ GameObject:
   - component: {fileID: 370536134}
   - component: {fileID: 370536133}
   - component: {fileID: 370536132}
+  - component: {fileID: 370536135}
   m_Layer: 5
   m_Name: Button Baixo
   m_TagString: Untagged
@@ -5690,6 +5737,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370536130}
   m_CullTransparentMesh: 1
+--- !u!114 &370536135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370536130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2087023733}
+          m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
+          m_MethodName: TouchJump
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2087023733}
+          m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
+          m_MethodName: TouchJump
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &392333629
 GameObject:
   m_ObjectHideFlags: 0
@@ -8717,6 +8809,7 @@ GameObject:
   - component: {fileID: 705247534}
   - component: {fileID: 705247533}
   - component: {fileID: 705247532}
+  - component: {fileID: 705247535}
   m_Layer: 5
   m_Name: Button Baixo
   m_TagString: Untagged
@@ -8826,6 +8919,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705247530}
   m_CullTransparentMesh: 1
+--- !u!114 &705247535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705247530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2087023733}
+          m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
+          m_MethodName: TouchVertical
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: -1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2087023733}
+          m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
+          m_MethodName: TouchVertical
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &714440622
 GameObject:
   m_ObjectHideFlags: 0
@@ -9482,6 +9620,7 @@ GameObject:
   - component: {fileID: 769707052}
   - component: {fileID: 769707051}
   - component: {fileID: 769707050}
+  - component: {fileID: 769707053}
   m_Layer: 5
   m_Name: Button Cima
   m_TagString: Untagged
@@ -9591,6 +9730,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769707048}
   m_CullTransparentMesh: 1
+--- !u!114 &769707053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769707048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2087023733}
+          m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
+          m_MethodName: TouchVertical
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2087023733}
+          m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
+          m_MethodName: TouchVertical
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &772308854
 GameObject:
   m_ObjectHideFlags: 0
@@ -16657,6 +16841,7 @@ GameObject:
   - component: {fileID: 1289644878}
   - component: {fileID: 1289644877}
   - component: {fileID: 1289644876}
+  - component: {fileID: 1289644879}
   m_Layer: 5
   m_Name: Button Direita
   m_TagString: Untagged
@@ -16766,6 +16951,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289644874}
   m_CullTransparentMesh: 1
+--- !u!114 &1289644879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289644874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2087023733}
+          m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
+          m_MethodName: TouchHorizontal
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2087023733}
+          m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
+          m_MethodName: TouchHorizontal
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1298710233
 GameObject:
   m_ObjectHideFlags: 0
@@ -26463,6 +26693,7 @@ GameObject:
   - component: {fileID: 2087023726}
   - component: {fileID: 2087023731}
   - component: {fileID: 2087023732}
+  - component: {fileID: 2087023733}
   m_Layer: 7
   m_Name: Personagem
   m_TagString: Player
@@ -26637,6 +26868,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bananaScore: {fileID: 1937505657}
   bananasColetadas: 0
+--- !u!114 &2087023733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087023725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a74bbf4b91871af4b87da5c490861162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canJump: 0
 --- !u!1 &2097459341
 GameObject:
   m_ObjectHideFlags: 0
