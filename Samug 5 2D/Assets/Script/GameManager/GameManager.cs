@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    private bool isPaused = false;
+
     public int quantidadeVida = 3; // Valor inicial da vida
 
     private void Awake()
@@ -19,6 +21,28 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            TogglePause();
+        }
+    }
+
+    void TogglePause()
+    {
+        isPaused = !isPaused;
+
+        if (isPaused)
+        {
+            Time.timeScale = 0f; // Pausa o jogo definindo o timescale para zero
+        }
+        else
+        {
+            Time.timeScale = 1f; // Retoma o jogo definindo o timescale de volta para um
         }
     }
 
