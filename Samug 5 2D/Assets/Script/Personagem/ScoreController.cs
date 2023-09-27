@@ -8,19 +8,19 @@ public class ScoreController : MonoBehaviour
 
     // Contagem de Banana
     public TMP_Text bananaScore; // Referência para o objeto de texto "Banana Score"
-    public int bananasColetadas = 0; // Contagem de corações coletados
+    public static int bananasColetadas = 0; // Contagem de corações coletados
 
     // Start is called before the first frame update
     void Start()
     {
         // Inicializar o objeto de texto com a contagem de corações
-        bananaScore.text = "= 0";
+        UpdateBananaScoreText();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -33,7 +33,12 @@ public class ScoreController : MonoBehaviour
             bananasColetadas++;
 
             // Atualizar o objeto de texto com a nova contagem de corações
-            bananaScore.text = "= " + bananasColetadas.ToString();
+            UpdateBananaScoreText();
         }
+    }
+
+    private void UpdateBananaScoreText()
+    {
+        bananaScore.text = "= " + bananasColetadas.ToString();
     }
 }

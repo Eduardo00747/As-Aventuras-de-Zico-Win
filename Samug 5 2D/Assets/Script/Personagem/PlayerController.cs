@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
 
+    private SpriteRenderer spriteRenderer;
+
     public GameObject escadaEnemyCima; // Referência ao objeto "Escada Enemy Cima"
     public GameObject escadaEnemyBaixo; // Referência ao objeto "Escada Enemy Baixo"
 
@@ -20,10 +22,14 @@ public class PlayerController : MonoBehaviour
     public float climbSpeed = 3f; // Velocidade de subida na escada
     [SerializeField] private bool isClimbing; // Indica se o jogador está subindo na escada
 
+    //Variaveis de animação
+    private Animator animator;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -34,6 +40,25 @@ public class PlayerController : MonoBehaviour
         Vector2 moveDirection = new Vector2(horizontalInput, 0);
 
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, rb.velocity.y);
+
+        // Configura a variável de animação "isWalk" no Animator
+        bool isWalk = Mathf.Abs(horizontalInput) > 0.1f;
+        animator.SetBool("isWalk", isWalk);
+
+        // Verificar se o jogador está se movendo para a esquerda e inverter o sprite
+        if (horizontalInput < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        // Verificar se o jogador está se movendo para a direita e restaurar a orientação do sprite
+        else if (horizontalInput > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+
+
+        // Configura o parâmetro "isJump" na animação
+        animator.SetBool("isJump", !isGrounded); // Inverte o estado do pulo (true quando não estiver no chão)
 
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
@@ -49,6 +74,7 @@ public class PlayerController : MonoBehaviour
             if (verticalInput > 0)
             {
                 rb.velocity = new Vector2(rb.velocity.x, climbSpeed);
+                animator.SetBool("isClimb", true);
 
                 // Ative o objeto "Escada Enemy Cima"
                 escadaEnemyCima.SetActive(true);
@@ -60,6 +86,7 @@ public class PlayerController : MonoBehaviour
             else if (verticalInput < 0)
             {
                 rb.velocity = new Vector2(rb.velocity.x, -climbSpeed);
+                animator.SetBool("isClimb", true);
 
                 // Desative o objeto "Escada Enemy Cima"
                 escadaEnemyCima.SetActive(false);
@@ -89,6 +116,7 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("Ladder"))
         {
             isClimbing = false;
+            animator.SetBool("isClimb", false);
             rb.gravityScale = 1; // Reativa a gravidade ao sair da escada
         }
     }
