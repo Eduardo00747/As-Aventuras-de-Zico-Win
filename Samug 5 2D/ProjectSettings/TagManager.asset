@@ -11,6 +11,7 @@ TagManager:
   - Area Effect
   - Waypoint
   - Banana
+  - CascoBanana
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Player
   - Inimigo
   - ParedeInimigo
-  - 
+  - CascoBanana
   - 
   - 
   - 

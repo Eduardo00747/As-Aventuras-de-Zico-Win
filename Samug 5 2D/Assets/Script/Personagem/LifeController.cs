@@ -45,10 +45,6 @@ public class LifeController : MonoBehaviour
         {
             // Se não houver mais vidas restantes, vá para a cena "Game Over"
             SceneManager.LoadScene("Game Over");
-
-            // Redefina a contagem de bananas coletadas para 0
-            ScoreController.bananasColetadas = 0;
-
         }
     }
 

@@ -4696,7 +4696,7 @@ Transform:
   - {fileID: 401612897}
   - {fileID: 1363114528}
   m_Father: {fileID: 2053210000}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &254036046
 GameObject:
@@ -7429,6 +7429,7 @@ GameObject:
   - component: {fileID: 403157044}
   - component: {fileID: 403157043}
   - component: {fileID: 403157042}
+  - component: {fileID: 403157046}
   m_Layer: 0
   m_Name: Inimigo (10)
   m_TagString: Inimigo
@@ -7566,6 +7567,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &403157046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403157040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &403434628
 GameObject:
   m_ObjectHideFlags: 0
@@ -10047,6 +10060,7 @@ GameObject:
   - component: {fileID: 615196078}
   - component: {fileID: 615196077}
   - component: {fileID: 615196076}
+  - component: {fileID: 615196080}
   m_Layer: 0
   m_Name: Inimigo (15)
   m_TagString: Inimigo
@@ -10184,6 +10198,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &615196080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615196074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &619155504
 GameObject:
   m_ObjectHideFlags: 0
@@ -11026,6 +11052,7 @@ GameObject:
   - component: {fileID: 646707709}
   - component: {fileID: 646707708}
   - component: {fileID: 646707707}
+  - component: {fileID: 646707711}
   m_Layer: 0
   m_Name: Inimigo (7)
   m_TagString: Inimigo
@@ -11163,6 +11190,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &646707711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646707705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &652096828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 652096829}
+  - component: {fileID: 652096830}
+  m_Layer: 7
+  m_Name: Drop Banana
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &652096829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652096828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.55, y: -0.29, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2087023730}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &652096830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652096828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00e7a908319c67b4ab114de3c569a7a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cascoBananaPrefab: {fileID: 3703795484708893388, guid: a36ec724ea2173c4d8cc7d2aec112dee, type: 3}
 --- !u!1 &652949595
 GameObject:
   m_ObjectHideFlags: 0
@@ -11469,6 +11553,7 @@ GameObject:
   - component: {fileID: 665877042}
   - component: {fileID: 665877041}
   - component: {fileID: 665877040}
+  - component: {fileID: 665877044}
   m_Layer: 0
   m_Name: Inimigo (9)
   m_TagString: Inimigo
@@ -11606,6 +11691,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &665877044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665877038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &670935530
 GameObject:
   m_ObjectHideFlags: 0
@@ -12288,7 +12385,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2053210000}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705247530
 GameObject:
@@ -12871,6 +12968,7 @@ GameObject:
   - component: {fileID: 740850409}
   - component: {fileID: 740850408}
   - component: {fileID: 740850407}
+  - component: {fileID: 740850411}
   m_Layer: 0
   m_Name: Inimigo (3)
   m_TagString: Inimigo
@@ -13008,6 +13106,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &740850411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740850405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &747038219
 GameObject:
   m_ObjectHideFlags: 0
@@ -13450,7 +13560,7 @@ Transform:
   - {fileID: 1747619072}
   - {fileID: 505024387}
   m_Father: {fileID: 2053210000}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &775401188
 GameObject:
@@ -14127,6 +14237,7 @@ GameObject:
   - component: {fileID: 821170007}
   - component: {fileID: 821170006}
   - component: {fileID: 821170005}
+  - component: {fileID: 821170009}
   m_Layer: 0
   m_Name: Inimigo (4)
   m_TagString: Inimigo
@@ -14264,6 +14375,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &821170009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821170003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &821260375
 GameObject:
   m_ObjectHideFlags: 0
@@ -16794,7 +16917,7 @@ Transform:
   - {fileID: 576852203}
   - {fileID: 778899677}
   m_Father: {fileID: 2053210000}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &973764983
 GameObject:
@@ -17470,6 +17593,7 @@ GameObject:
   - component: {fileID: 1000316316}
   - component: {fileID: 1000316315}
   - component: {fileID: 1000316314}
+  - component: {fileID: 1000316318}
   m_Layer: 0
   m_Name: Inimigo (2)
   m_TagString: Inimigo
@@ -17607,6 +17731,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1000316318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000316312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1005492997
 GameObject:
   m_ObjectHideFlags: 0
@@ -17892,6 +18028,7 @@ GameObject:
   - component: {fileID: 1025854315}
   - component: {fileID: 1025854314}
   - component: {fileID: 1025854313}
+  - component: {fileID: 1025854317}
   m_Layer: 0
   m_Name: Inimigo (14)
   m_TagString: Inimigo
@@ -18029,6 +18166,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1025854317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025854311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1028336346
 GameObject:
   m_ObjectHideFlags: 0
@@ -18361,6 +18510,7 @@ GameObject:
   - component: {fileID: 1044965244}
   - component: {fileID: 1044965243}
   - component: {fileID: 1044965247}
+  - component: {fileID: 1044965248}
   m_Layer: 0
   m_Name: Inimigo
   m_TagString: Inimigo
@@ -18498,6 +18648,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1.2
   moveDuration: 1.7
+--- !u!114 &1044965248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044965242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1047052768
 GameObject:
   m_ObjectHideFlags: 0
@@ -18746,6 +18908,7 @@ GameObject:
   - component: {fileID: 1064174568}
   - component: {fileID: 1064174567}
   - component: {fileID: 1064174566}
+  - component: {fileID: 1064174570}
   m_Layer: 0
   m_Name: Inimigo (12)
   m_TagString: Inimigo
@@ -18883,6 +19046,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1064174570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064174564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1076980576
 GameObject:
   m_ObjectHideFlags: 0
@@ -22231,6 +22406,90 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 8.288235}
   serializedVersion: 2
   m_Radius: 19.78
+--- !u!1 &1232596287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1232596288}
+  - component: {fileID: 1232596289}
+  m_Layer: 0
+  m_Name: FrontGround
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1232596288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232596287}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.97, y: -6.03, z: -0.07807922}
+  m_LocalScale: {x: 1.2655079, y: 0.6492081, z: 0.25754}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2053210000}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1232596289
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232596287}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: 15522dd500168f64f8dd0789e05cc723, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1240272074
 GameObject:
   m_ObjectHideFlags: 0
@@ -23293,6 +23552,7 @@ GameObject:
   - component: {fileID: 1304618424}
   - component: {fileID: 1304618423}
   - component: {fileID: 1304618422}
+  - component: {fileID: 1304618426}
   m_Layer: 0
   m_Name: Inimigo (6)
   m_TagString: Inimigo
@@ -23430,6 +23690,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1304618426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304618420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1314930571
 GameObject:
   m_ObjectHideFlags: 0
@@ -26992,6 +27264,7 @@ GameObject:
   - component: {fileID: 1523381988}
   - component: {fileID: 1523381987}
   - component: {fileID: 1523381986}
+  - component: {fileID: 1523381990}
   m_Layer: 0
   m_Name: Inimigo (8)
   m_TagString: Inimigo
@@ -27129,6 +27402,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1523381990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523381984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1525935662
 GameObject:
   m_ObjectHideFlags: 0
@@ -28161,6 +28446,7 @@ GameObject:
   - component: {fileID: 1576720341}
   - component: {fileID: 1576720340}
   - component: {fileID: 1576720339}
+  - component: {fileID: 1576720343}
   m_Layer: 0
   m_Name: Inimigo (16)
   m_TagString: Inimigo
@@ -28298,6 +28584,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1576720343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576720337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1578516291
 GameObject:
   m_ObjectHideFlags: 0
@@ -28311,6 +28609,7 @@ GameObject:
   - component: {fileID: 1578516295}
   - component: {fileID: 1578516294}
   - component: {fileID: 1578516293}
+  - component: {fileID: 1578516297}
   m_Layer: 0
   m_Name: Inimigo (13)
   m_TagString: Inimigo
@@ -28448,6 +28747,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1578516297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578516291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1593396046
 GameObject:
   m_ObjectHideFlags: 0
@@ -30538,6 +30849,7 @@ GameObject:
   - component: {fileID: 1750329038}
   - component: {fileID: 1750329037}
   - component: {fileID: 1750329036}
+  - component: {fileID: 1750329040}
   m_Layer: 0
   m_Name: Inimigo (1)
   m_TagString: Inimigo
@@ -30675,6 +30987,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1750329040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750329034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1754392130
 GameObject:
   m_ObjectHideFlags: 0
@@ -34797,7 +35121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1976546129}
   m_Layer: 7
-  m_Name: GameObject
+  m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -36733,6 +37057,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2097459343}
+  - {fileID: 1232596288}
   - {fileID: 967000631}
   - {fileID: 772308855}
   - {fileID: 2125376849}
@@ -36793,6 +37118,7 @@ GameObject:
   - component: {fileID: 2060933525}
   - component: {fileID: 2060933524}
   - component: {fileID: 2060933523}
+  - component: {fileID: 2060933527}
   m_Layer: 0
   m_Name: Inimigo (11)
   m_TagString: Inimigo
@@ -36930,6 +37256,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2060933527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060933521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2086434778
 GameObject:
   m_ObjectHideFlags: 0
@@ -37068,9 +37406,9 @@ GameObject:
   - component: {fileID: 2087023727}
   - component: {fileID: 2087023726}
   - component: {fileID: 2087023731}
-  - component: {fileID: 2087023732}
   - component: {fileID: 2087023733}
   - component: {fileID: 2087023734}
+  - component: {fileID: 2087023735}
   m_Layer: 7
   m_Name: Personagem
   m_TagString: Player
@@ -37090,7 +37428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532692b1b226f2b4188956dc8fbb82ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 1
   jumpForce: 3.5
   groundCheck: {fileID: 1976546129}
   groundCheckRadius: 0.1
@@ -37101,6 +37439,7 @@ MonoBehaviour:
   escadaEnemyBaixo: {fileID: 505024386}
   climbSpeed: 1
   isClimbing: 0
+  DropBanana: {fileID: 652096828}
 --- !u!50 &2087023727
 Rigidbody2D:
   serializedVersion: 4
@@ -37213,6 +37552,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1976546129}
+  - {fileID: 652096829}
   - {fileID: 7685312402655937045}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -37231,19 +37571,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   vidaScore: {fileID: 1219168769}
---- !u!114 &2087023732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2087023725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11af7497793c0674292fbb38bc84240b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bananaScore: {fileID: 1937505657}
 --- !u!114 &2087023733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37276,6 +37603,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &2087023735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087023725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca6bc96b1659f4847b5aa6abae3b3d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bananaScore: {fileID: 1937505657}
+  bananasColetadas: 0
 --- !u!1 &2087504377
 GameObject:
   m_ObjectHideFlags: 0
@@ -37474,6 +37815,7 @@ GameObject:
   - component: {fileID: 2092731613}
   - component: {fileID: 2092731612}
   - component: {fileID: 2092731611}
+  - component: {fileID: 2092731615}
   m_Layer: 0
   m_Name: Inimigo (5)
   m_TagString: Inimigo
@@ -37611,6 +37953,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2092731615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092731609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488520429c9569b43bed5ff53d9bcf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2097459341
 GameObject:
   m_ObjectHideFlags: 0
@@ -38310,7 +38664,7 @@ Transform:
   - {fileID: 2013279770}
   - {fileID: 69078111}
   m_Father: {fileID: 2053210000}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2127842990
 GameObject:
@@ -38586,7 +38940,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2087023730}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7685312402655937050
 MonoBehaviour:

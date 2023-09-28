@@ -25,11 +25,17 @@ public class PlayerController : MonoBehaviour
     //Variaveis de animação
     private Animator animator;
 
+    //Referencia as armas 
+    public GameObject DropBanana; // Referência ao objeto HitBoxAtaque
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Obtém a referência do objeto "Throw Cruz"
+        DropBanana = transform.Find("Drop Banana").gameObject;
     }
 
     private void Update()
@@ -100,6 +106,17 @@ public class PlayerController : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, 0);
             }
         }
+    }
+
+    private void LateUpdate()
+    {
+        // Verifique o valor de spriteRenderer.flipX
+        float dropBananaOffsetX = spriteRenderer.flipX ? 0.41f : -0.55f;
+
+        // Defina a posição X da DropBanana com base no valor calculado
+        Vector3 dropBananaPos = DropBanana.transform.localPosition;
+        dropBananaPos.x = dropBananaOffsetX;
+        DropBanana.transform.localPosition = dropBananaPos;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

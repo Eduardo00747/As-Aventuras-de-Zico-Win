@@ -22,13 +22,6 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject); // Se já existir uma instância, destrói este objeto para evitar duplicatas.
         }
-
-        // Ao acordar, obter o valor atual de bananasColetadas do ScoreController
-        if (ScoreController.bananasColetadas > 0)
-        {
-            // Atualizar a contagem de bananas coletadas
-            quantidadeVida = 3; // Defina a quantidade de vida para 3 (ou outro valor desejado).
-        }
     }
 
     void Update()
