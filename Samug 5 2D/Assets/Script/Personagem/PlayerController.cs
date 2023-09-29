@@ -81,6 +81,7 @@ public class PlayerController : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, climbSpeed);
                 animator.SetBool("isClimb", true);
+                animator.SetBool("isWalk", false);
 
                 // Ative o objeto "Escada Enemy Cima"
                 escadaEnemyCima.SetActive(true);
@@ -93,6 +94,7 @@ public class PlayerController : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, -climbSpeed);
                 animator.SetBool("isClimb", true);
+                animator.SetBool("isWalk", false);
 
                 // Desative o objeto "Escada Enemy Cima"
                 escadaEnemyCima.SetActive(false);
@@ -134,6 +136,7 @@ public class PlayerController : MonoBehaviour
         {
             isClimbing = false;
             animator.SetBool("isClimb", false);
+            animator.SetBool("isWalk", true);
             rb.gravityScale = 1; // Reativa a gravidade ao sair da escada
         }
     }
