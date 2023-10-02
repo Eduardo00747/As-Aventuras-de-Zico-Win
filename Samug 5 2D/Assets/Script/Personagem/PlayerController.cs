@@ -15,8 +15,8 @@ public class PlayerController : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
-    public GameObject escadaEnemyCima; // Referência ao objeto "Escada Enemy Cima"
-    public GameObject escadaEnemyBaixo; // Referência ao objeto "Escada Enemy Baixo"
+    //public GameObject escadaEnemyCima; // Referência ao objeto "Escada Enemy Cima"
+    //public GameObject escadaEnemyBaixo; // Referência ao objeto "Escada Enemy Baixo"
 
     //Variaveis Escada
     public float climbSpeed = 3f; // Velocidade de subida na escada
@@ -84,10 +84,10 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("isWalk", false);
 
                 // Ative o objeto "Escada Enemy Cima"
-                escadaEnemyCima.SetActive(true);
+                //escadaEnemyCima.SetActive(true);
 
                 // Ative o objeto "Escada Enemy Baixo"
-                escadaEnemyBaixo.SetActive(false);
+                //escadaEnemyBaixo.SetActive(false);
             }
             // Se estiver pressionando para baixo, desça a escada
             else if (verticalInput < 0)
@@ -97,10 +97,10 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("isWalk", false);
 
                 // Desative o objeto "Escada Enemy Cima"
-                escadaEnemyCima.SetActive(false);
+                //escadaEnemyCima.SetActive(false);
 
                 // Ative o objeto "Escada Enemy Baixo"
-                escadaEnemyBaixo.SetActive(true);
+                //escadaEnemyBaixo.SetActive(true);
             }
             // Se não estiver pressionando verticalmente, mantenha a velocidade vertical zero
             else

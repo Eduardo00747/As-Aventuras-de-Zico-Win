@@ -64,7 +64,7 @@ public class EnemyController : MonoBehaviour
     public void StartChasing()
     {
         isChasing = true;
-        moveSpeed = 1.8f;
+        moveSpeed = 1f;
         rb.gravityScale = 0; // Reativa a gravidade ao sair da escada
 
     }
@@ -73,7 +73,7 @@ public class EnemyController : MonoBehaviour
     public void StartChasing(bool chase)
     {
         isChasing = chase;
-        moveSpeed = 1.2f;
+        moveSpeed = 1f;
         rb.gravityScale = 1; // Reativa a gravidade ao sair da escada
-    }  
+    }
 }
