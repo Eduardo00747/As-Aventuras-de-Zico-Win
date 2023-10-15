@@ -8,7 +8,6 @@ TagManager:
   - Ladder
   - Parede
   - Inimigo
-  - Area Effect
   - Waypoint
   - Banana
   - CascoBanana
@@ -18,6 +17,7 @@ TagManager:
   - Abutre
   - CascoPreto
   - Javali
+  - Abelha
   layers:
   - Default
   - TransparentFX
@@ -35,7 +35,7 @@ TagManager:
   - Banana
   - CascoPreto
   - Javali
-  - 
+  - Abelha
   - 
   - 
   - 
