@@ -14,6 +14,10 @@ TagManager:
   - CascoBanana
   - ParedeInimigo
   - Inimigo2
+  - Queda
+  - Abutre
+  - CascoPreto
+  - Javali
   layers:
   - Default
   - TransparentFX
@@ -27,10 +31,10 @@ TagManager:
   - ParedeInimigo
   - CascoBanana
   - Inimigo-2
-  - 
-  - 
-  - 
-  - 
+  - Abutre
+  - Banana
+  - CascoPreto
+  - Javali
   - 
   - 
   - 
