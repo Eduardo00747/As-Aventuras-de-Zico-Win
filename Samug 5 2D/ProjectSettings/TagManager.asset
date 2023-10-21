@@ -20,6 +20,8 @@ TagManager:
   - Abelha
   - WaypointLilas
   - WaypointVerde
+  - Area Effect
+  - Escada
   layers:
   - Default
   - TransparentFX

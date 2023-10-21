@@ -50,7 +50,7 @@ public class LifeController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Inimigo") || collision.gameObject.CompareTag("Queda") || collision.gameObject.CompareTag("Abutre") || collision.gameObject.CompareTag("CascoPreto") || collision.gameObject.CompareTag("Javali") || collision.gameObject.CompareTag("Abelha"))
+        if (collision.gameObject.CompareTag("Inimigo2") || collision.gameObject.CompareTag("Queda") || collision.gameObject.CompareTag("Abutre") || collision.gameObject.CompareTag("CascoPreto") || collision.gameObject.CompareTag("Javali") || collision.gameObject.CompareTag("Abelha"))
         {
             TakeDamage(10);// Se colidir com um objeto com a tag "Inimigo", aplique 10 de dano
         }
