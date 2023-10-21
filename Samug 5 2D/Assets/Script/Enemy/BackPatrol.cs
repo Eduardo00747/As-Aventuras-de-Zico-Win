@@ -4,27 +4,44 @@ using UnityEngine;
 
 public class BackPatrol : MonoBehaviour
 {
-    public GameObject detectObject; // Referência ao objeto "Detect"
+    public CacadorController cacadorController;
+    public EnemyWaypointChaser enemyWaypointChaser;
 
-    public EnemyController enemyController; // Referência ao script "EnemyController"
-
-
-
-    // Esta função é chamada quando algo deixa a área de colisão
-    private void OnTriggerExit2D(Collider2D other)
+    // Chamado quando um Collider entra no Trigger
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Verifica se o que saiu da área de colisão tem a tag "Player"
+        // Verifica se o Collider que entrou é o "Player"
         if (other.CompareTag("Player"))
         {
-            // Desativa o objeto a qual este script está anexado
-            gameObject.SetActive(false);
+            // Desativa o script CacadorController
+            cacadorController.enabled = false;
 
-            // Ativa o objeto "Detect"
-            detectObject.SetActive(true);
+            // Ativa o script EnemyWaypointChaser
+            enemyWaypointChaser.enabled = true;
+        }
+    }
 
-            // Define o "StartChasing" no script "EnemyController" como falso
-            enemyController.StartChasing(false);
+    // Chamado quando um Collider sai do Trigger
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        // Verifica se o Collider que saiu é o "Player"
+        if (other.CompareTag("Player"))
+        {
+            // Ativa o script CacadorController
+            cacadorController.enabled = true;
 
+            // Desativa o script EnemyWaypointChaser
+            enemyWaypointChaser.enabled = false;
+        }
+    }
+
+    private void OnDisable()
+    {
+        // Ativa o objeto "BackPatrol" (assumindo que ele seja um filho do inimigo)
+        Transform detectTransform = transform.parent.Find("Detect");
+        if (detectTransform != null)
+        {
+            detectTransform.gameObject.SetActive(true);
         }
     }
 }

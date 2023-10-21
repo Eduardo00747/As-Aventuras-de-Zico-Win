@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 
     public int quantidadeVida = 3; // Valor inicial da vida do jogador.
 
+    //Não esqucer de colocar o time ...
+
     private void Awake()
     {
         if (instance == null) // Verifica se já existe uma instância do GameManager.

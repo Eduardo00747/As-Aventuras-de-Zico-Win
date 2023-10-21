@@ -18,6 +18,8 @@ TagManager:
   - CascoPreto
   - Javali
   - Abelha
+  - WaypointLilas
+  - WaypointVerde
   layers:
   - Default
   - TransparentFX

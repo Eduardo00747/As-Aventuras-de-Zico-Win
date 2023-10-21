@@ -54,12 +54,12 @@ public class PlayerController : MonoBehaviour
         // Verificar se o jogador está se movendo para a esquerda e inverter o sprite
         if (horizontalInput < 0)
         {
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = false;
         }
         // Verificar se o jogador está se movendo para a direita e restaurar a orientação do sprite
         else if (horizontalInput > 0)
         {
-            spriteRenderer.flipX = false;
+            spriteRenderer.flipX = true;
         }
 
 

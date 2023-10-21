@@ -30,7 +30,7 @@ public class LifeController : MonoBehaviour
         }
     }
 
-    private void Die()
+    public void Die()
     {
         vidasRestantes--;// Subtrai 1 das vidas restantes
 
