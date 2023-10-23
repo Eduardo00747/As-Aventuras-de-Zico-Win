@@ -16,7 +16,7 @@ public class DesativeColider : MonoBehaviour
     {
         if (other.CompareTag("Escada"))
         {
-            animator.SetBool("isLadder", true);
+            animator.SetBool("Subindo", true);
 
             // Desativa os Box Colliders 2D dos objetos filho
             BoxCollider2D[] colliders = GetComponentsInChildren<BoxCollider2D>();
@@ -32,7 +32,7 @@ public class DesativeColider : MonoBehaviour
         if (other.CompareTag("Escada"))
         {
 
-            animator.SetBool("isLadder", false);
+            animator.SetBool("Subindo", false);
 
             // Ativa os Box Colliders 2D dos objetos filho novamente
             BoxCollider2D[] colliders = GetComponentsInChildren<BoxCollider2D>();

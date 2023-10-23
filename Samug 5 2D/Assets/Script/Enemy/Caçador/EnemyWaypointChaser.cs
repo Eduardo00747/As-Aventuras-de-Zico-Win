@@ -9,10 +9,15 @@ public class EnemyWaypointChaser : MonoBehaviour
 
     private SpriteRenderer spriteRenderer; // Referência ao Sprite Renderer
 
+    //Variaveis de animação
+    private Animator animator;
+
     void Start()
     {
         // Obtém a referência ao SpriteRenderer
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -21,6 +26,8 @@ public class EnemyWaypointChaser : MonoBehaviour
         {
             // Calcula a direção em direção ao personagem
             Vector3 direction = (target.position - transform.position).normalized;
+
+            animator.SetBool("isRun", true);
 
             // Movimenta o inimigo na direção horizontal
             Vector3 movement = new Vector3(direction.x, 0, 0) * moveSpeed * Time.deltaTime;

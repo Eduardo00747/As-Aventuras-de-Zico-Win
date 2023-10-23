@@ -13,6 +13,9 @@ public class CacadorController : MonoBehaviour
 
     private SpriteRenderer spriteRenderer; // Referência ao Sprite Renderer
 
+    //Variaveis de animação
+    private Animator animator;
+
     void Start()
     {
         if (waypoints.Length > 0)
@@ -22,6 +25,8 @@ public class CacadorController : MonoBehaviour
 
         // Obtém a referência ao SpriteRenderer
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -49,5 +54,8 @@ public class CacadorController : MonoBehaviour
 
         // Define FlipX com base na direção do movimento
         spriteRenderer.flipX = (direction.x < 0);
+
+        // Se o jogador não estiver dentro da zona de detecção, o inimigo não está correndo
+        animator.SetBool("isRun", false);
     }
 }
