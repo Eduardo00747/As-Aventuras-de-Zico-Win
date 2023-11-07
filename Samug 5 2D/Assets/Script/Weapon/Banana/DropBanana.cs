@@ -6,6 +6,15 @@ public class DropBanana : MonoBehaviour
 {
     public BananaWeapon bananaWeapon; // Referência ao script BananaWeapon
     public GameObject cascoBananaPrefab; // Referência ao prefab do CascoBanana que você deseja instanciar.
+    public PlayerController playerController; // Referência ao script PlayerController
+
+    private float originalMoveSpeed; // Variável para armazenar a velocidade original do jogador
+    private bool isSpeedChanged = false; // Variável para controlar se a velocidade foi alterada
+
+    void Start()
+    {
+        originalMoveSpeed = playerController.moveSpeed; // Salve a velocidade original do jogador
+    }
 
     void Update()
     {
@@ -20,6 +29,31 @@ public class DropBanana : MonoBehaviour
 
             // Instancia o prefab do CascoBanana na posição atual deste objeto.
             Instantiate(cascoBananaPrefab, transform.position, Quaternion.identity);
+
+            // Altera a velocidade do jogador para 1.3
+            playerController.moveSpeed = 1.3f;
+
+            // Define a variável de controle para indicar que a velocidade foi alterada
+            isSpeedChanged = true;
+
+            // Chame uma função para reverter a velocidade após 2 segundos
+            StartCoroutine(ResetSpeedAfterDelay(2.0f));
+
+        }
+    }
+
+    IEnumerator ResetSpeedAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        // Verifique se a velocidade foi alterada
+        if (isSpeedChanged)
+        {
+            // Reverta a velocidade para o valor original
+            playerController.moveSpeed = originalMoveSpeed;
+
+            // Redefina a variável de controle
+            isSpeedChanged = false;
         }
     }
 }

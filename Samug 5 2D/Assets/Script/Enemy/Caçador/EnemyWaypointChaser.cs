@@ -36,7 +36,7 @@ public class EnemyWaypointChaser : MonoBehaviour
             // Movimenta o inimigo na direção horizontal
             Vector3 movement = new Vector3(direction.x, 0, 0) * moveSpeed * Time.deltaTime;
             // Congela a posição Y do Rigidbody
-            rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation; 
+            rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
 
             transform.Translate(movement);
 

@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TineController : MonoBehaviour
 {
-    public float timeRemaining = 60f; // Tempo inicial em segundos
+    public float timeRemaining = 10f; // Tempo inicial em segundos
     public TMP_Text timerText; // Referência ao objeto de texto
     public LifeController lifeController; // Referência ao GameManager
 
@@ -24,8 +25,7 @@ public class TineController : MonoBehaviour
         else
         {
             timeRemaining = 0; // Define o tempo restante como zero
-            //timerText.text = ""; // Exibe uma mensagem de "Game Over"
-            lifeController.Die();
+            SceneManager.LoadScene("Fim");
         }
     }
 
