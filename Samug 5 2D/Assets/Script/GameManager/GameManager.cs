@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     public int quantidadeVida = 3; // Valor inicial da vida do jogador.
 
-    //Não esqucer de colocar o time ...
+    public GameObject pauseObject; // Referência ao objeto "Pause" na HUD.
 
     private void Awake()
     {
@@ -23,6 +23,11 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject); // Se já existir uma instância, destrói este objeto para evitar duplicatas.
+        }
+
+        if (pauseObject != null)
+        {
+            pauseObject.SetActive(false); // Garanta que o objeto "Pause" esteja inativo no início.
         }
     }
 
@@ -41,10 +46,18 @@ public class GameManager : MonoBehaviour
         if (isPaused)
         {
             Time.timeScale = 0f; // Pausa o jogo definindo o timeScale para zero. Isso congela todos os objetos que dependem do timeScale para sua animação ou movimento.
+            if (pauseObject != null)
+            {
+                pauseObject.SetActive(true); // Ativa o objeto "Pause" na HUD quando o jogo está pausado.
+            }
         }
         else
         {
             Time.timeScale = 1f; // Retoma o jogo definindo o timeScale de volta para 1. Isso faz com que o jogo retome seu ritmo normal.
+            if (pauseObject != null)
+            {
+                pauseObject.SetActive(false); // Desativa o objeto "Pause" na HUD quando o jogo é retomado.
+            }
         }
     }
 

@@ -5,10 +5,12 @@ using TMPro;
 
 public class FinalScore : MonoBehaviour
 {
-    public TMP_Text primeiraPontuacaoText;
+    public TMP_Text pontuacaoFinalText;
 
     void Start()
     {
-
+        // Recupere a pontuação salva nos PlayerPrefs
+        int pontuacao = PlayerPrefs.GetInt("Pontuacao", 0);
+        pontuacaoFinalText.text = "Pontuação Final: " + pontuacao.ToString();
     }
 }
