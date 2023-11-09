@@ -6,6 +6,8 @@ public class Detect : MonoBehaviour
 {
     public CacadorController cacadorController; // Referencia ao script do Caçador 
 
+    public Cacadorchase cacadorchase;
+
 
     // Chamado quando um Collider entra no Trigger
     private void OnTriggerEnter2D(Collider2D other)
@@ -14,21 +16,8 @@ public class Detect : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             cacadorController.enabled = false;
+            cacadorchase.enabled = true;
 
-            // Desativar o objeto em vez de destruí-lo
-            gameObject.SetActive(false);
-        }
-    }
-
-
-    private void OnDisable()
-    {
-
-        // Ativa o objeto "BackPatrol" (assumindo que ele seja um filho do inimigo)
-        Transform backPatrolTransform = transform.parent.Find("BackPatrulha");
-        if (backPatrolTransform != null)
-        {
-            backPatrolTransform.gameObject.SetActive(true);
         }
     }
 }

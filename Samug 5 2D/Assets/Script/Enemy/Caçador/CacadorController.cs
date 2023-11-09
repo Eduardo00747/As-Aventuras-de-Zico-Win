@@ -10,6 +10,7 @@ public class CacadorController : MonoBehaviour
 
     private Transform currentWaypoint;
     private int currentWaypointIndex = 0;
+    public Cacadorchase cacadorchase;
 
     private SpriteRenderer spriteRenderer; // Referência ao Sprite Renderer
 
@@ -39,6 +40,7 @@ public class CacadorController : MonoBehaviour
 
     void MoveTowardsWaypoint()
     {
+        cacadorchase.enabled = false;
         Vector3 direction = (currentWaypoint.position - transform.position).normalized;
         Vector3 movement = direction * moveSpeed * Time.deltaTime;
         transform.Translate(movement);

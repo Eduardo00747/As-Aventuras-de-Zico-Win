@@ -3148,7 +3148,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnGaiola (5)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3426,79 +3426,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!1 &72511458
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 72511459}
-  - component: {fileID: 72511461}
-  - component: {fileID: 72511460}
-  m_Layer: 0
-  m_Name: BackPatrulha
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &72511459
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 72511458}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19, y: -4.422872, z: 0}
-  m_LocalScale: {x: 0.43980134, y: 0.51790076, z: 0.51790076}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1861233745}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &72511460
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 72511458}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 10.353073, y: 8.6281595}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 72.72622, y: 2.4525356}
-  m_EdgeRadius: 0
---- !u!114 &72511461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 72511458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc86f3e28df80a2448a716cf30b71913, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cacadorController: {fileID: 1861233742}
-  enemyWaypointChaser: {fileID: 1861233740}
 --- !u!1 &76591527
 GameObject:
   m_ObjectHideFlags: 0
@@ -4689,9 +4616,9 @@ GameObject:
   - component: {fileID: 114532275}
   - component: {fileID: 114532271}
   - component: {fileID: 114532274}
-  - component: {fileID: 114532270}
   - component: {fileID: 114532273}
   - component: {fileID: 114532272}
+  - component: {fileID: 114532277}
   m_Layer: 11
   m_Name: "Ca\xE7adorW (2)"
   m_TagString: Inimigo2
@@ -4712,24 +4639,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1190458261}
-  - {fileID: 227901932}
   m_Father: {fileID: 1734969424}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114532270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114532268}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d8461ed2f93f841a40626b36a65ca8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 2087023730}
-  moveSpeed: 1
 --- !u!114 &114532271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4749,6 +4661,7 @@ MonoBehaviour:
   - {fileID: 1556743528}
   moveSpeed: 0.9
   collisionDistance: 0.05
+  cacadorchase: {fileID: 114532277}
 --- !u!95 &114532272
 Animator:
   serializedVersion: 5
@@ -4870,6 +4783,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &114532277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114532268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97155e9986926fe4db4702fddafef540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  cacadorController: {fileID: 114532271}
+  detect: {fileID: 1190458263}
 --- !u!1 &116443592
 GameObject:
   m_ObjectHideFlags: 0
@@ -5051,7 +4979,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnGaiola (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5503,79 +5431,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &129288372
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 129288373}
-  - component: {fileID: 129288375}
-  - component: {fileID: 129288374}
-  m_Layer: 0
-  m_Name: BackPatrulha
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &129288373
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129288372}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19, y: -4.422872, z: 0}
-  m_LocalScale: {x: 0.43980134, y: 0.51790076, z: 0.51790076}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1376416317}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &129288374
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129288372}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -5.625263, y: 8.693868}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 72.8036, y: 2.3211193}
-  m_EdgeRadius: 0
---- !u!114 &129288375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129288372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc86f3e28df80a2448a716cf30b71913, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cacadorController: {fileID: 1376416314}
-  enemyWaypointChaser: {fileID: 1376416312}
 --- !u!1 &132297761
 GameObject:
   m_ObjectHideFlags: 0
@@ -8957,79 +8812,6 @@ AreaEffector2D:
   m_ForceTarget: 0
   m_Drag: 0
   m_AngularDrag: 0
---- !u!1 &227901931
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 227901932}
-  - component: {fileID: 227901934}
-  - component: {fileID: 227901933}
-  m_Layer: 0
-  m_Name: BackPatrulha
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &227901932
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227901931}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19, y: -4.422872, z: 0}
-  m_LocalScale: {x: 0.43980134, y: 0.51790076, z: 0.51790076}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 114532269}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &227901933
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227901931}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -1.0987167, y: 8.693869}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 72.72623, y: 2.3211212}
-  m_EdgeRadius: 0
---- !u!114 &227901934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227901931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc86f3e28df80a2448a716cf30b71913, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cacadorController: {fileID: 114532271}
-  enemyWaypointChaser: {fileID: 114532270}
 --- !u!1 &229258417
 GameObject:
   m_ObjectHideFlags: 0
@@ -13670,7 +13452,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnGaiola
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -13682,7 +13464,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338334051}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.857, y: 0.496, z: 0}
+  m_LocalPosition: {x: -2.857, y: -0.387, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17640,6 +17422,7 @@ MonoBehaviour:
   - {fileID: 57844898}
   moveSpeed: 0.9
   collisionDistance: 0.05
+  cacadorchase: {fileID: 0}
 --- !u!114 &456349659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22032,7 +21815,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnGaiola (4)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -22335,7 +22118,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnGaiola (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -23992,6 +23775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacadorController: {fileID: 1376416314}
+  cacadorchase: {fileID: 1376416318}
 --- !u!1 &650796950
 GameObject:
   m_ObjectHideFlags: 0
@@ -31553,6 +31337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacadorController: {fileID: 1861233742}
+  cacadorchase: {fileID: 1861233746}
 --- !u!1 &835120364
 GameObject:
   m_ObjectHideFlags: 0
@@ -32719,6 +32504,7 @@ MonoBehaviour:
   - {fileID: 57844898}
   moveSpeed: 0.9
   collisionDistance: 0.05
+  cacadorchase: {fileID: 0}
 --- !u!50 &852180975
 Rigidbody2D:
   serializedVersion: 4
@@ -38778,6 +38564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacadorController: {fileID: 456349658}
+  cacadorchase: {fileID: 0}
 --- !u!1 &988492998
 GameObject:
   m_ObjectHideFlags: 0
@@ -46041,6 +45828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacadorController: {fileID: 114532271}
+  cacadorchase: {fileID: 114532277}
 --- !u!1 &1193499804
 GameObject:
   m_ObjectHideFlags: 0
@@ -48092,7 +47880,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnGaiola (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -52341,9 +52129,9 @@ GameObject:
   - component: {fileID: 1376416315}
   - component: {fileID: 1376416314}
   - component: {fileID: 1376416313}
-  - component: {fileID: 1376416312}
   - component: {fileID: 1376416311}
   - component: {fileID: 1376416310}
+  - component: {fileID: 1376416318}
   m_Layer: 11
   m_Name: "Ca\xE7adorW"
   m_TagString: Inimigo2
@@ -52383,20 +52171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55aaa70af80de1b4889b92b523996391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1376416312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376416309}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d8461ed2f93f841a40626b36a65ca8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 2087023730}
-  moveSpeed: 1
 --- !u!70 &1376416313
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -52432,6 +52206,7 @@ MonoBehaviour:
   - {fileID: 57844898}
   moveSpeed: 0.9
   collisionDistance: 0.05
+  cacadorchase: {fileID: 1376416318}
 --- !u!50 &1376416315
 Rigidbody2D:
   serializedVersion: 4
@@ -52518,10 +52293,24 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 649500423}
-  - {fileID: 129288373}
   m_Father: {fileID: 1734969424}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1376416318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376416309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97155e9986926fe4db4702fddafef540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  cacadorController: {fileID: 1376416314}
+  detect: {fileID: 649500425}
 --- !u!1 &1377536364
 GameObject:
   m_ObjectHideFlags: 0
@@ -67961,9 +67750,9 @@ GameObject:
   - component: {fileID: 1861233743}
   - component: {fileID: 1861233742}
   - component: {fileID: 1861233741}
-  - component: {fileID: 1861233740}
   - component: {fileID: 1861233739}
   - component: {fileID: 1861233738}
+  - component: {fileID: 1861233746}
   m_Layer: 11
   m_Name: "Ca\xE7adorW (1)"
   m_TagString: Inimigo2
@@ -68003,20 +67792,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55aaa70af80de1b4889b92b523996391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1861233740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1861233737}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d8461ed2f93f841a40626b36a65ca8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 2087023730}
-  moveSpeed: 1
 --- !u!70 &1861233741
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -68052,6 +67827,7 @@ MonoBehaviour:
   - {fileID: 72448916}
   moveSpeed: 0.9
   collisionDistance: 0.05
+  cacadorchase: {fileID: 1861233746}
 --- !u!50 &1861233743
 Rigidbody2D:
   serializedVersion: 4
@@ -68138,10 +67914,24 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 830223561}
-  - {fileID: 72511459}
   m_Father: {fileID: 1734969424}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1861233746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861233737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97155e9986926fe4db4702fddafef540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  cacadorController: {fileID: 1861233742}
+  detect: {fileID: 830223563}
 --- !u!1 &1862236627
 GameObject:
   m_ObjectHideFlags: 0
@@ -79341,6 +79131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacadorController: {fileID: 852180974}
+  cacadorchase: {fileID: 0}
 --- !u!4 &2137412347
 Transform:
   m_ObjectHideFlags: 0
