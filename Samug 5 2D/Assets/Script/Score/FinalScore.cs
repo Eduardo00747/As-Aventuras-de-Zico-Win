@@ -11,6 +11,6 @@ public class FinalScore : MonoBehaviour
     {
         // Recupere a pontuação salva nos PlayerPrefs
         int pontuacao = PlayerPrefs.GetInt("Pontuacao", 0);
-        pontuacaoFinalText.text = "Pontuação Final: " + pontuacao.ToString();
+        pontuacaoFinalText.text = "" + pontuacao.ToString();
     }
 }

@@ -17,7 +17,7 @@ public class LifeController : MonoBehaviour
     {
         currentHealth = maxHealth;// Configura a saúde atual para o valor máximo no início
         vidasRestantes = GameManager.instance.GetVida();// Obtém o valor da vida do GameManager
-        vidaScore.text = "= " + vidasRestantes.ToString(); // Atualiza o texto da quantidade de vidas no UI
+        vidaScore.text = " " + vidasRestantes.ToString(); // Atualiza o texto da quantidade de vidas no UI
     }
 
     public void TakeDamage(int damageAmount)

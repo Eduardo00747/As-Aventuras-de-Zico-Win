@@ -13,7 +13,7 @@ public class BananaWeapon : MonoBehaviour
     void Start()
     {
         // Inicializar o objeto de texto com a contagem de corações
-        bananaScore.text = "= 0";
+        bananaScore.text = " 0";
     }
 
     // Update is called once per frame
