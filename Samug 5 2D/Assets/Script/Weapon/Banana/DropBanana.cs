@@ -4,16 +4,23 @@ using UnityEngine;
 
 public class DropBanana : MonoBehaviour
 {
+    //Variaveis para a arma do personagem 
     public BananaWeapon bananaWeapon; // Referência ao script BananaWeapon
     public GameObject cascoBananaPrefab; // Referência ao prefab do CascoBanana que você deseja instanciar.
     public PlayerController playerController; // Referência ao script PlayerController
 
+    //Variaveis de Audios 
+    public AudioSource audioSource; // Adicione esta variável para acessar o componente AudioSource
+    public AudioClip hurt; // Adicione esta variável para armazenar o som de ataque
+
+    //Variaveis para o aumento de velocidade do personagem 
     private float originalMoveSpeed; // Variável para armazenar a velocidade original do jogador
     private bool isSpeedChanged = false; // Variável para controlar se a velocidade foi alterada
 
     void Start()
     {
         originalMoveSpeed = playerController.moveSpeed; // Salve a velocidade original do jogador
+        audioSource = GetComponent<AudioSource>(); // Obtenha a referência do componente AudioSource
     }
 
     void Update()
@@ -29,6 +36,8 @@ public class DropBanana : MonoBehaviour
 
             // Instancia o prefab do CascoBanana na posição atual deste objeto.
             Instantiate(cascoBananaPrefab, transform.position, Quaternion.identity);
+
+            audioSource.PlayOneShot(hurt);
 
             // Altera a velocidade do jogador para 1.3
             playerController.moveSpeed = 1.3f;

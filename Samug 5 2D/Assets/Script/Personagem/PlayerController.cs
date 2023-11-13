@@ -13,6 +13,11 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
 
+    //Variaveis de som
+    public AudioSource audioSource; // Adicione esta variável para acessar o componente AudioSource
+    public AudioClip jump; // Adicione esta variável para armazenar o som de ataque
+
+    //Outras Variaveis 
     private SpriteRenderer spriteRenderer;
 
     public GameObject cipo; //Referencia ao Objeto Cipó
@@ -36,6 +41,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>(); // Obtenha a referência do componente AudioSource
 
         // Obtém a referência do objeto "Throw Cruz"
         DropBanana = transform.Find("Drop Banana").gameObject;
@@ -87,6 +93,7 @@ public class PlayerController : MonoBehaviour
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            audioSource.PlayOneShot(jump);
         }
 
         // Verifica se o jogador está na escada

@@ -13,11 +13,16 @@ public class LifeController : MonoBehaviour
 
     private int vidasRestantes;// Variável para controlar o número de vidas restantes
 
+    public AudioSource audioSource; // Adicione esta variável para acessar o componente AudioSource
+    public AudioClip punch; // Adicione esta variável para armazenar o som de ataque
+
     void Start()
     {
         currentHealth = maxHealth;// Configura a saúde atual para o valor máximo no início
         vidasRestantes = GameManager.instance.GetVida();// Obtém o valor da vida do GameManager
         vidaScore.text = " " + vidasRestantes.ToString(); // Atualiza o texto da quantidade de vidas no UI
+        audioSource = GetComponent<AudioSource>(); // Obtenha a referência do componente AudioSource
+
     }
 
     public void TakeDamage(int damageAmount)
@@ -27,6 +32,7 @@ public class LifeController : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();// Se a saúde chegar a zero ou menos, chama a função Die
+
         }
     }
 
@@ -34,7 +40,10 @@ public class LifeController : MonoBehaviour
     {
         vidasRestantes--;// Subtrai 1 das vidas restantes
 
-        vidaScore.text = "= " + vidasRestantes.ToString(); // Atualiza o texto da quantidade de vidas no UI
+        vidaScore.text = " " + vidasRestantes.ToString(); // Atualiza o texto da quantidade de vidas no UI
+
+        audioSource.PlayOneShot(punch);
+
 
         if (vidasRestantes > 0)
         {
