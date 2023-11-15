@@ -53,5 +53,26 @@ public class Cacadorchase : MonoBehaviour
             detect.enabled = true;
 
         }
+
+        // Verifica se o objeto tem a tag "Gaiola"
+        if (collision.collider.CompareTag("Gaiola"))
+        {
+            // Define a variável para parar o movimento
+            canMove = false;
+            //animator.SetBool("isRun", false);
+            animator.SetBool("IsDown", true);
+
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        // Verifica se a colisão deixou de ocorrer com um objeto de tag "Gaiola"
+        if (collision.collider.CompareTag("Gaiola"))
+        {
+            // Define a variável para permitir o movimento novamente
+            canMove = true;
+            animator.SetBool("IsDown", false);
+        }
     }
 }

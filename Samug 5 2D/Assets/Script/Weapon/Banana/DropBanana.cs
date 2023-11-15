@@ -17,10 +17,15 @@ public class DropBanana : MonoBehaviour
     private float originalMoveSpeed; // Variável para armazenar a velocidade original do jogador
     private bool isSpeedChanged = false; // Variável para controlar se a velocidade foi alterada
 
+    private Animator animator;
+
+
     void Start()
     {
         originalMoveSpeed = playerController.moveSpeed; // Salve a velocidade original do jogador
         audioSource = GetComponent<AudioSource>(); // Obtenha a referência do componente AudioSource
+        animator = GetComponentInParent<Animator>();
+
     }
 
     void Update()
@@ -38,6 +43,7 @@ public class DropBanana : MonoBehaviour
             Instantiate(cascoBananaPrefab, transform.position, Quaternion.identity);
 
             audioSource.PlayOneShot(hurt);
+            animator.SetBool("IsRuning", true);
 
             // Altera a velocidade do jogador para 1.3
             playerController.moveSpeed = 1.3f;
@@ -60,6 +66,7 @@ public class DropBanana : MonoBehaviour
         {
             // Reverta a velocidade para o valor original
             playerController.moveSpeed = originalMoveSpeed;
+            animator.SetBool("IsRuning", false);
 
             // Redefina a variável de controle
             isSpeedChanged = false;
