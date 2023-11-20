@@ -1270,7 +1270,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31579427}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3671656, y: -0.86398, z: 0}
+  m_LocalPosition: {x: -1.3638511, y: -0.86398, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13452,6 +13452,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &334459605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 334459606}
+  m_Layer: 0
+  m_Name: Banana
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &334459606
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334459605}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.3249}
+  m_LocalScale: {x: 1.3005, y: 1.3005, z: 1.3005}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2104145750}
+  m_Father: {fileID: 1155036897}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -4.9000244, y: 38.976013}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 1, y: 0}
 --- !u!1 &334699281
 GameObject:
   m_ObjectHideFlags: 0
@@ -13705,7 +13742,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 21.171997, y: 45.903152}
+  m_AnchoredPosition: {x: 21.171997, y: 68.90315}
   m_SizeDelta: {x: 33.6333, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &339362986
@@ -13772,7 +13809,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f171518ebdc3de3449848af710d84b82, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 59a1e22a7e417e1479e804a3cc3b9508, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -13807,7 +13844,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023733}
+        - m_Target: {fileID: 2087023738}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchHorizontal
           m_Mode: 3
@@ -13823,7 +13860,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023733}
+        - m_Target: {fileID: 2087023738}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchHorizontal
           m_Mode: 3
@@ -15215,7 +15252,7 @@ GameObject:
   - component: {fileID: 370536132}
   - component: {fileID: 370536135}
   m_Layer: 5
-  m_Name: Button Baixo
+  m_Name: Button Jump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15305,7 +15342,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d90e6d5e75cb1c64f9f3c26306de6d29, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5761ab0666ebc714b9c84196f6a53251, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -15340,7 +15377,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023733}
+        - m_Target: {fileID: 2087023738}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchJump
           m_Mode: 3
@@ -15356,7 +15393,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023733}
+        - m_Target: {fileID: 2087023738}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchJump
           m_Mode: 3
@@ -24062,7 +24099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bananaWeapon: {fileID: 2087023735}
   cascoBananaPrefab: {fileID: 3703795484708893388, guid: a36ec724ea2173c4d8cc7d2aec112dee, type: 3}
-  playerController: {fileID: 2087023726}
+  touchController: {fileID: 2087023738}
   audioSource: {fileID: 652096831}
   hurt: {fileID: 8300000, guid: b1ef385c8b980ca46ab39d5d7200d6c7, type: 3}
 --- !u!82 &652096831
@@ -26090,7 +26127,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 77.02899, y: -3.7955627}
+  m_AnchoredPosition: {x: 76, y: 11}
   m_SizeDelta: {x: 31.7758, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &705247532
@@ -26157,7 +26194,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 57586f3f1953ad847b9640193ac31268, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 26aa8755cc92b5d40a97908076f179ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -26192,10 +26229,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023733}
+        - m_Target: {fileID: 2087023738}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
-          m_MethodName: TouchVertical
-          m_Mode: 3
+          m_MethodName: TouchVerticalBaixo
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -26208,10 +26245,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023733}
+        - m_Target: {fileID: 2087023738}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
-          m_MethodName: TouchVertical
-          m_Mode: 3
+          m_MethodName: ReleaseVerticalKey
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -29377,7 +29414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 77.26099, y: 97.02014}
+  m_AnchoredPosition: {x: 77.26099, y: 128}
   m_SizeDelta: {x: 33.6333, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &769707050
@@ -29444,7 +29481,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e38ac9e9474251a4d9cbc234c2d60913, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7cfc3e5eb54116249a2da5028031c390, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -29479,10 +29516,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023733}
+        - m_Target: {fileID: 2087023738}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
-          m_MethodName: TouchVertical
-          m_Mode: 3
+          m_MethodName: TouchVerticalCIma
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -29495,10 +29532,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023733}
+        - m_Target: {fileID: 2087023738}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
-          m_MethodName: TouchVertical
-          m_Mode: 3
+          m_MethodName: ReleaseVerticalKey
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -38356,7 +38393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979309450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.298835, y: 0.83998, z: -10}
+  m_LocalPosition: {x: -7.3021493, y: 0.83998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45036,7 +45073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1155036894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45112,6 +45149,7 @@ RectTransform:
   m_Children:
   - {fileID: 796773267}
   - {fileID: 1093874165}
+  - {fileID: 334459606}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49526,7 +49564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 120.619995, y: 45.903152}
+  m_AnchoredPosition: {x: 139, y: 68.90315}
   m_SizeDelta: {x: 33.6333, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1289644876
@@ -49593,7 +49631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0b589ff27a054ab45b5852c53af2ab6d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca20b8df5dbe5ea428454b2c6ee2ff19, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -49628,7 +49666,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023733}
+        - m_Target: {fileID: 2087023738}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchHorizontal
           m_Mode: 3
@@ -49644,7 +49682,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023733}
+        - m_Target: {fileID: 2087023738}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchHorizontal
           m_Mode: 3
@@ -72107,7 +72145,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.1448865}
+  m_Offset: {x: 0, y: -0.1920309}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -72118,7 +72156,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.04, y: 21.454205}
+  m_Size: {x: 2.04, y: 22.128038}
   m_EdgeRadius: 0
 --- !u!1 &1966452628
 GameObject:
@@ -75691,7 +75729,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053209999}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: de676f743d7817a41bdede589836bd15, type: 3}
@@ -77136,13 +77174,12 @@ GameObject:
   - component: {fileID: 2087023729}
   - component: {fileID: 2087023728}
   - component: {fileID: 2087023727}
-  - component: {fileID: 2087023726}
   - component: {fileID: 2087023731}
-  - component: {fileID: 2087023733}
   - component: {fileID: 2087023734}
   - component: {fileID: 2087023735}
   - component: {fileID: 2087023736}
   - component: {fileID: 2087023737}
+  - component: {fileID: 2087023738}
   m_Layer: 7
   m_Name: Personagem
   m_TagString: Player
@@ -77150,31 +77187,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2087023726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2087023725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 532692b1b226f2b4188956dc8fbb82ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0.9
-  jumpForce: 3.5
-  groundCheck: {fileID: 1976546129}
-  groundCheckRadius: 0.1
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  audioSource: {fileID: 2087023737}
-  jump: {fileID: 8300000, guid: bb2cbdb75a4432041a2e2a2eaa89cd46, type: 3}
-  cipo: {fileID: 1656473792}
-  climbSpeed: 1
-  isClimbing: 0
-  DropBanana: {fileID: 652096828}
 --- !u!50 &2087023727
 Rigidbody2D:
   serializedVersion: 4
@@ -77307,18 +77319,6 @@ MonoBehaviour:
   vidaScore: {fileID: 1219168769}
   audioSource: {fileID: 2087023737}
   punch: {fileID: 8300000, guid: 1fa5844ca8132594ba1238b157451ec8, type: 3}
---- !u!114 &2087023733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2087023725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a74bbf4b91871af4b87da5c490861162, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &2087023734
 Animator:
   serializedVersion: 5
@@ -77465,6 +77465,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2087023738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087023725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a74bbf4b91871af4b87da5c490861162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1.9
+  audioSource: {fileID: 2087023737}
+  jump: {fileID: 8300000, guid: bb2cbdb75a4432041a2e2a2eaa89cd46, type: 3}
+  cipo: {fileID: 1656473792}
+  DropBanana: {fileID: 652096828}
+  dropBanana: {fileID: 652096830}
+  climbSpeed: 1.9
 --- !u!1 &2087850606
 GameObject:
   m_ObjectHideFlags: 0
@@ -77885,6 +77904,157 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2104145749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2104145750}
+  - component: {fileID: 2104145754}
+  - component: {fileID: 2104145753}
+  - component: {fileID: 2104145752}
+  - component: {fileID: 2104145751}
+  m_Layer: 5
+  m_Name: Button Drop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2104145750
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104145749}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.0212402}
+  m_LocalScale: {x: 2.5937824, y: 2.5937824, z: 2.5937824}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 334459606}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 8, y: 6}
+  m_SizeDelta: {x: 31.7758, y: 30}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &2104145751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104145749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2087023738}
+          m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
+          m_MethodName: Banana
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &2104145752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104145749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2104145753}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2104145753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104145749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: fa65bdc84ed882a409bdc8a81337c6d4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2104145754
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104145749}
+  m_CullTransparentMesh: 1
 --- !u!1 &2104328144
 GameObject:
   m_ObjectHideFlags: 0

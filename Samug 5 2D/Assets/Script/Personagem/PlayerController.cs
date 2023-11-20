@@ -60,9 +60,10 @@ public class PlayerController : MonoBehaviour
 
         // Configura a variável de animação "isWalk" no Animator
         bool isWalk = Mathf.Abs(horizontalInput) > 0.1f;
-        isPressingVerticalKey = Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f;
 
         animator.SetBool("isWalk", isWalk);
+
+        isPressingVerticalKey = Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f;
 
         if (isPressingVerticalKey)
         {
@@ -74,6 +75,7 @@ public class PlayerController : MonoBehaviour
             // Desativa o objeto "Cipo"
             cipo.SetActive(false);
         }
+
 
         // Verificar se o jogador está se movendo para a esquerda e inverter o sprite
         if (horizontalInput < 0)
@@ -96,32 +98,9 @@ public class PlayerController : MonoBehaviour
             audioSource.PlayOneShot(jump);
         }
 
-        // Verifica se o jogador está na escada
         if (isClimbing)
         {
-            float verticalInput = Input.GetAxis("Vertical");
-
-            // Se estiver pressionando para cima, suba a escada
-            if (verticalInput > 0)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, climbSpeed);
-                animator.SetBool("EstaSubindo", true);
-                animator.SetBool("isWalk", false);
-
-            }
-            // Se estiver pressionando para baixo, desça a escada
-            else if (verticalInput < 0)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, -climbSpeed);
-                animator.SetBool("EstaSubindo", true);
-                animator.SetBool("isWalk", false);
-
-            }
-            // Se não estiver pressionando verticalmente, mantenha a velocidade vertical zero
-            else
-            {
-                rb.velocity = new Vector2(rb.velocity.x, 0);
-            }
+            ClimbLadder();
         }
     }
 
@@ -153,6 +132,23 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("EstaSubindo", false);
             animator.SetBool("isWalk", true);
             rb.gravityScale = 1; // Reativa a gravidade ao sair da escada
+        }
+    }
+
+    // Adicione um novo método para a movimentação vertical
+    public void ClimbLadder()
+    {
+        float verticalInput = Input.GetAxis("Vertical");
+
+        if (verticalInput != 0)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, verticalInput * climbSpeed);
+            animator.SetBool("EstaSubindo", true);
+            animator.SetBool("isWalk", false);
+        }
+        else
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 0);
         }
     }
 }
