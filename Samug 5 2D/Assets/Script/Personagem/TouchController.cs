@@ -6,7 +6,7 @@ public class TouchController : MonoBehaviour
 {
     private int auxDirecaoX; // Direção horizontal
     private int auxJump;
-    private float jumpForce = 3.5f; // Força do pulo
+    private float jumpForce = 3f; // Força do pulo
     private bool canJump;    // Indica se o jogador pode pular
     public float moveSpeed;
 

@@ -15,7 +15,7 @@ public class DropBanana : MonoBehaviour
     public AudioClip hurt; // Adicione esta variável para armazenar o som de ataque
 
     //Variaveis para o aumento de velocidade do personagem 
-    private float originalMoveSpeed; // Variável para armazenar a velocidade original do jogador
+    private float originalMoveSpeed = 0.9f; // Variável para armazenar a velocidade original do jogador
     private bool isSpeedChanged = false; // Variável para controlar se a velocidade foi alterada
 
     private Animator animator;
