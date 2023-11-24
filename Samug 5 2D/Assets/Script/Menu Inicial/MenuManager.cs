@@ -12,7 +12,7 @@ public class MenuManager : MonoBehaviour
     {
         // Carrega a cena "Fase 1"
         //SceneManager.LoadScene("Fase 1");
-        StartCoroutine(PlayMusicAndLoadScene("Fase 1"));
+        StartCoroutine(PlayMusicAndLoadScene("Tutorial Fase 1"));
     }
 
     public void Options()

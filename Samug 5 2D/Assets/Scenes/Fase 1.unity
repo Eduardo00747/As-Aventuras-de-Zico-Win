@@ -327,7 +327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 76.5, y: -30.347}
+  m_AnchoredPosition: {x: 32.3, y: -30.347}
   m_SizeDelta: {x: 131.7098, y: 109.3264}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &8992001
@@ -1270,7 +1270,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31579427}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6502695, y: -0.86471, z: 0}
+  m_LocalPosition: {x: -1.3658199, y: -0.86398, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2155,11 +2155,11 @@ RectTransform:
   m_Father: {fileID: 1761820757}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -103.5, y: -72.006}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 228.6, y: -225}
   m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0, y: 1}
 --- !u!1 &45153973
 GameObject:
   m_ObjectHideFlags: 0
@@ -5816,11 +5816,11 @@ RectTransform:
   m_Father: {fileID: 1761820757}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -306.91, y: -10.341}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 21.590332, y: -155.33502}
   m_SizeDelta: {x: 142.1994, y: 100}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &141774529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13723,7 +13723,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023738}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchHorizontal
           m_Mode: 3
@@ -13739,7 +13739,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023738}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchHorizontal
           m_Mode: 3
@@ -15208,7 +15208,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023738}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchJump
           m_Mode: 3
@@ -15224,7 +15224,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023738}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchJump
           m_Mode: 3
@@ -23389,7 +23389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bananaWeapon: {fileID: 2087023735}
   cascoBananaPrefab: {fileID: 3703795484708893388, guid: a36ec724ea2173c4d8cc7d2aec112dee, type: 3}
-  touchController: {fileID: 2087023738}
+  playerController: {fileID: 2087023738}
   audioSource: {fileID: 652096831}
   hurt: {fileID: 8300000, guid: b1ef385c8b980ca46ab39d5d7200d6c7, type: 3}
 --- !u!82 &652096831
@@ -25519,7 +25519,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023738}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchVerticalBaixo
           m_Mode: 1
@@ -25535,7 +25535,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023738}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: ReleaseVerticalKey
           m_Mode: 1
@@ -28758,7 +28758,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023738}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchVerticalCIma
           m_Mode: 1
@@ -28774,7 +28774,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023738}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: ReleaseVerticalKey
           m_Mode: 1
@@ -31235,7 +31235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 419, y: -77.3}
+  m_AnchoredPosition: {x: 186, y: -77.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &844422829
@@ -37298,7 +37298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979309450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.015731, y: 0.84071, z: -10}
+  m_LocalPosition: {x: -7.3001804, y: 0.83998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -43736,7 +43736,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1155036894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45649,7 +45649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 233, y: -77.407}
+  m_AnchoredPosition: {x: 188.79999, y: -77.407}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1219168769
@@ -48281,7 +48281,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023738}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchHorizontal
           m_Mode: 3
@@ -48297,7 +48297,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023738}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: TouchHorizontal
           m_Mode: 3
@@ -49506,7 +49506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 221.14801, y: -34.07498}
+  m_AnchoredPosition: {x: -11.85199, y: -34.07498}
   m_SizeDelta: {x: 186.68152, y: 109.3264}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!95 &1320435613
@@ -51021,10 +51021,10 @@ GameObject:
   - component: {fileID: 1376416316}
   - component: {fileID: 1376416315}
   - component: {fileID: 1376416314}
-  - component: {fileID: 1376416313}
-  - component: {fileID: 1376416311}
-  - component: {fileID: 1376416310}
   - component: {fileID: 1376416318}
+  - component: {fileID: 1376416311}
+  - component: {fileID: 1376416313}
+  - component: {fileID: 1376416310}
   m_Layer: 11
   m_Name: "Ca\xE7adorW"
   m_TagString: Inimigo2
@@ -75101,12 +75101,12 @@ GameObject:
   - component: {fileID: 2087023729}
   - component: {fileID: 2087023728}
   - component: {fileID: 2087023727}
+  - component: {fileID: 2087023738}
+  - component: {fileID: 2087023737}
   - component: {fileID: 2087023731}
   - component: {fileID: 2087023734}
   - component: {fileID: 2087023735}
   - component: {fileID: 2087023736}
-  - component: {fileID: 2087023737}
-  - component: {fileID: 2087023738}
   m_Layer: 7
   m_Name: Personagem
   m_TagString: Player
@@ -75401,16 +75401,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2087023725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a74bbf4b91871af4b87da5c490861162, type: 3}
+  m_Script: {fileID: 11500000, guid: 532692b1b226f2b4188956dc8fbb82ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.9
+  jumpForce: 3
+  groundCheck: {fileID: 1976546129}
+  groundCheckRadius: 0.1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
   audioSource: {fileID: 2087023737}
   jump: {fileID: 8300000, guid: bb2cbdb75a4432041a2e2a2eaa89cd46, type: 3}
   cipo: {fileID: 1656473792}
-  DropBanana: {fileID: 652096828}
-  dropBanana: {fileID: 652096830}
   climbSpeed: 1.9
+  isClimbing: 0
+  DropBanana: {fileID: 652096828}
 --- !u!1 &2087850606
 GameObject:
   m_ObjectHideFlags: 0
@@ -75888,7 +75894,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087023738}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: TouchController, Assembly-CSharp
           m_MethodName: Banana
           m_Mode: 1

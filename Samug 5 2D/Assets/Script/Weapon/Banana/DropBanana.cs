@@ -7,8 +7,8 @@ public class DropBanana : MonoBehaviour
     //Variaveis para a arma do personagem 
     public BananaWeapon bananaWeapon; // Referência ao script BananaWeapon
     public GameObject cascoBananaPrefab; // Referência ao prefab do CascoBanana que você deseja instanciar.
-    //public PlayerController playerController; // Referência ao script PlayerController
-    public TouchController touchController; //Referencia ao script Touch Controller
+    public PlayerController playerController; // Referência ao script PlayerController
+    //public TouchController touchController; //Referencia ao script Touch Controller
 
     //Variaveis de Audios 
     public AudioSource audioSource; // Adicione esta variável para acessar o componente AudioSource
@@ -23,8 +23,8 @@ public class DropBanana : MonoBehaviour
 
     void Start()
     {
-        originalMoveSpeed = touchController.moveSpeed; // Salve a velocidade original do jogador
-        //originalMoveSpeed = playerController.moveSpeed; // Salve a velocidade original do jogador
+        //originalMoveSpeed = touchController.moveSpeed; // Salve a velocidade original do jogador
+        originalMoveSpeed = playerController.moveSpeed; // Salve a velocidade original do jogador
         audioSource = GetComponent<AudioSource>(); // Obtenha a referência do componente AudioSource
         animator = GetComponentInParent<Animator>();
 
@@ -33,7 +33,7 @@ public class DropBanana : MonoBehaviour
     void Update()
     {
         // Verifica se a tecla "K" foi pressionada e se o jogador tem pelo menos uma banana.
-        if (Input.GetKeyDown(KeyCode.K) && bananaWeapon.bananasColetadas > 0)
+        if (Input.GetKeyDown(KeyCode.B) && bananaWeapon.bananasColetadas > 0)
         {
             // Reduz a contagem de bananas em 1.
             bananaWeapon.bananasColetadas--;
@@ -48,8 +48,8 @@ public class DropBanana : MonoBehaviour
             animator.SetBool("IsRuning", true);
 
             // Altera a velocidade do jogador para 1.3
-            //playerController.moveSpeed = 1.3f;
-            touchController.moveSpeed = 1.3f;
+            playerController.moveSpeed = 1.3f;
+            //touchController.moveSpeed = 1.3f;
 
             // Define a variável de controle para indicar que a velocidade foi alterada
             isSpeedChanged = true;
@@ -68,8 +68,8 @@ public class DropBanana : MonoBehaviour
         if (isSpeedChanged)
         {
             // Reverta a velocidade para o valor original
-            //playerController.moveSpeed = originalMoveSpeed;
-            touchController.moveSpeed = originalMoveSpeed;
+            playerController.moveSpeed = originalMoveSpeed;
+            //touchController.moveSpeed = originalMoveSpeed;
             animator.SetBool("IsRuning", false);
 
             // Redefina a variável de controle
@@ -95,8 +95,8 @@ public class DropBanana : MonoBehaviour
             animator.SetBool("IsRuning", true);
 
             // Altera a velocidade do jogador para 1.3
-            //playerController.moveSpeed = 1.3f;
-            touchController.moveSpeed = 1.3f;
+            playerController.moveSpeed = 1.3f;
+            //touchController.moveSpeed = 1.3f;
 
             // Define a variável de controle para indicar que a velocidade foi alterada
             isSpeedChanged = true;
