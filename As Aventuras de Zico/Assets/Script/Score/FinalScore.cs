@@ -13,10 +13,4 @@ public class FinalScore : MonoBehaviour
         int pontuacao = PlayerPrefs.GetInt("Pontuacao", 0);
         pontuacaoFinalText.text = "" + pontuacao.ToString();
     }
-
-    // Método para obter a pontuação final
-    public int GetPontuacao()
-    {
-        return PlayerPrefs.GetInt("Pontuacao", 0);
-    }
 }

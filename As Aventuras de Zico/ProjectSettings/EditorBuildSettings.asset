@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Menu Inicial.unity
     guid: 95b048cb3801a8f4eb761a8bab218c85
@@ -26,9 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fim.unity
     guid: 05fd2ef25491ec347a07f78165d799a3
-  - enabled: 1
-    path: Assets/Scenes/Ranking.unity
-    guid: 8dde373d93b37df4db8dafedeef1100e
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: 898c487cf44111646a9256910d27cbc5
